@@ -13,6 +13,9 @@ const adminSchema = new mongoose.Schema({
 });
 
 const productSchema = new mongoose.Schema({
+    name: {type: String},
+    description: {type: String},
+    image:{type: String},
     title: {type: String},
     description: {type: String},
     mainImg: {type: String},
@@ -22,6 +25,7 @@ const productSchema = new mongoose.Schema({
     gender: {type: String},
     price: {type: Number},
     discount: {type: Number}
+    
 })
 
 const orderSchema = new mongoose.Schema({
